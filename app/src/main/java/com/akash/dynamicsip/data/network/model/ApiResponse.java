@@ -1,33 +1,23 @@
 package com.akash.dynamicsip.data.network.model;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class ApiResponse {
 
-
-    @SerializedName("date")
-    @Expose
-    private String date;
-    @SerializedName("sensex")
-    @Expose
+    public String date;
     public String sensex;
-    @SerializedName("equity")
-    @Expose
     public String equity;
-    @SerializedName("point")
-    @Expose
     public String point;
+    public boolean isSelected;
 
     public ApiResponse(){
 
     }
 
-    public ApiResponse(String date, String sensex, String equity, String point) {
+    public ApiResponse(String date, String sensex, String equity, String point, boolean isSelected) {
         this.date = date;
         this.sensex = sensex;
         this.equity = equity;
         this.point = point;
+        this.isSelected = isSelected;
     }
 
     public String getDate() {
@@ -60,5 +50,13 @@ public class ApiResponse {
 
     public void setPoint(String point) {
         this.point = point;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 }

@@ -2,9 +2,9 @@ package com.akash.dynamicsip.data.network;
 
 import com.akash.dynamicsip.data.network.model.ApiResponse;
 
-import io.reactivex.Single;
+import java.util.List;
 
 public interface APIHelper {
 
-    Single<ApiResponse> doApiCall();
+    List<ApiResponse> doApiCall();
 }

@@ -7,6 +7,7 @@ import android.net.NetworkInfo;
 public class CommonUtils {
 
     public static String TAG_CHECK = "check";
+    public static String TAG_FLOW = "flow";
 
     public static boolean isNetworkConnected(Context context) {
         ConnectivityManager cm =

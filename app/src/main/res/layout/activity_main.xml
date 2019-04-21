@@ -2,24 +2,55 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
     tools:context=".ui.main.MainActivity">
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/sip"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/earn"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/circle_shape"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <TextView
             android:id="@+id/fixedValueMain"
@@ -27,9 +58,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginTop="116dp"
-            android:text="Test"
+            android:text="@string/_50"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,9 +70,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="116dp"
             android:layout_marginEnd="28dp"
-            android:text="Test"
+            android:text="@string/_50"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,8 +83,8 @@
         android:id="@+id/dateRVMain"
         android:layout_width="match_parent"
         android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -71,10 +102,9 @@
         android:layout_marginTop="44dp"
         android:layout_marginEnd="8dp"
         android:ellipsize="end"
-        android:maxLines="5"
-        android:text="Point"
+        android:maxLines="4"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateRVMain" />
